@@ -1,13 +1,11 @@
 @charset "UTF-8";
-/*font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif;*/
 /*COLORES*/
-/*ESTILOS GENERALES*/
+/*COLORES*/
 * {
   margin: 0;
   padding: 0; }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   margin: 20px;
   font-size: 60px;
   color: #E55151;
@@ -20,21 +18,29 @@ p {
   line-height: 2;
   letter-spacing: 1px; }
 
-.mainBody {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header   header   header" "section  section  section" "footer   footer   footer"; }
+/*ESTILOS GENERALES*/
+/*.mainBody{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto); 
+	grid-template-areas: 	"header   header   header"
+							"section  section  section"
+							"footer   footer   footer"
+}
 
-.mainBody header {
-  grid-area: header; }
+.mainBody{
+	header{
+		grid-area: header;
+	}
 
-.mainBody section {
-  grid-area: section; }
+	section{
+		grid-area: section;
+	}
 
-.mainBody footer {
-  grid-area: footer; }
-
+	footer{
+		grid-area: footer;
+	}
+}*/
 /* MAIN HEADER */
 header {
   /* GENERAL TABLETS */
@@ -114,7 +120,7 @@ header {
     margin: 20px;
     background-color: #E55151;
     text-decoration: none;
-    color: #E4E4EA;
+    color: #fff;
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -135,7 +141,7 @@ header {
     font-size: 150px;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 2px #E4E4EA; }
+    -webkit-text-stroke: 2px #fff; }
 
 .main .main__video video {
   width: 100%;
@@ -147,7 +153,8 @@ header {
   background: #E55151;
   color: #fff;
   padding: 20px 50px;
-  margin: 0 250px; }
+  margin: 0 250px;
+  font-size: 30px; }
 
 .quienesSomos {
   padding: 50px;
@@ -312,7 +319,7 @@ header {
   .contacto form button {
     color: #fff;
     background-color: #E55151;
-    border: 0;
+    border: solid 2px #E55151;
     font-family: 'Montserrat';
     font-weight: 500;
     line-height: 2;
@@ -328,8 +335,8 @@ header {
 
 /* FOOTER */
 .footer {
-  background-image: linear-gradient(90deg, #E55151, #211F38);
-  /*background: #E55151;*/
+  /*background-image: linear-gradient(90deg, $color-rojo, $color-azul);*/
+  background: #211F38;
   padding: 30px 0;
   /*
 	footer div{
@@ -339,8 +346,8 @@ header {
 		justify-content: center;
 	}*/ }
   .footer .footer__elementos div p {
-    text-align: center;
-    color: #E4E4EA;
+    text-align: left;
+    color: #fff;
     margin: 0 40px; }
   .footer .footer__redes img {
     list-style: none;

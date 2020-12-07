@@ -1,0 +1,21 @@
+@import 'colores';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 20px;
+	font-size: 60px;
+	color: $color-rojo;
+	font-family: 'lora';
+	font-weight: 500;
+}
+
+p{
+ color: $color-azul;
+ font-family: 'Montserrat';
+ line-height: 2;
+ letter-spacing: 1px;
+}

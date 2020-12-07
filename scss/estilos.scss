@@ -1,36 +1,9 @@
-/*font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif;*/
-
-/*COLORES*/
-
-$color-rojo: #E55151;
-$color-azul: #211F38;
-$color-gris: #E4E4EA;
-$color-blaco: #fff;
+@import 'colores';
+@import 'generales';
 
 /*ESTILOS GENERALES*/
 
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2{
-	margin: 20px;
-	font-size: 60px;
-	color: $color-rojo;
-	font-family: 'lora';
-	font-weight: 500;
-}
-
-p{
- color: $color-azul;
- font-family: 'Montserrat';
- line-height: 2;
- letter-spacing: 1px;
-}
-
-.mainBody{
+/*.mainBody{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, auto); 
@@ -51,7 +24,7 @@ p{
 	footer{
 		grid-area: footer;
 	}
-}
+}*/
 
 /* MAIN HEADER */
 
@@ -168,7 +141,7 @@ header	{
 			margin: 20px; 
 			background-color: $color-rojo;
 			text-decoration: none;
-			color: #E4E4EA;
+			color: $color-blaco;
 			text-transform: uppercase;
 			font-family: 'Montserrat';
 			font-weight: 500;
@@ -183,7 +156,7 @@ header	{
 				animation: none;
 				background-color: transparent;
 				border: solid 2px $color-blaco;
-				color: #fff;
+				color: $color-blaco;
 				font-weight: 500;
 			}
 		}
@@ -193,7 +166,7 @@ header	{
 			font-size: 150px;
 			font-weight: 700;
 			color: transparent;
-			-webkit-text-stroke: 2px #E4E4EA;
+			-webkit-text-stroke: 2px $color-blaco;
 		}	
 	}
 
@@ -213,7 +186,8 @@ header	{
 		background: $color-rojo;
 		color: $color-blaco; 
 		padding:20px 50px;
-		margin: 0 250px; 
+		margin: 0 250px;
+		font-size: 30px;		
 	}
 }
 
@@ -243,7 +217,7 @@ header	{
 /* EQUIPO */
 
 .equipo{
-	background-color: #E4E4EA;
+	background-color: $color-gris;
 	padding: 50px;
 
 	h2{
@@ -459,7 +433,7 @@ header	{
 		button {
 			color: $color-blaco;
 			background-color:$color-rojo;
-			border: 0;
+			border: solid 2px $color-rojo;
 			font-family: 'Montserrat';
 			font-weight: 500;
 			line-height: 2;
@@ -467,9 +441,9 @@ header	{
 			transition: all 0.5s;
 
 			&:hover{
-				background-color: #fff;
-				border: solid 2px #E55151;
-				color: #E55151;
+				background-color: $color-blaco;
+				border: solid 2px $color-rojo;
+				color: $color-rojo;
 			}
 		}
 
@@ -484,8 +458,8 @@ header	{
 /* FOOTER */
 
 .footer{
-	background-image: linear-gradient(90deg, $color-rojo, $color-azul);
-	/*background: #E55151;*/
+	/*background-image: linear-gradient(90deg, $color-rojo, $color-azul);*/
+	background: $color-azul;
 	padding: 30px 0;
 
 	/*
@@ -497,8 +471,8 @@ header	{
 	}*/
 
 	.footer__elementos div p{
-		text-align: center;
-		color: #E4E4EA;
+		text-align: left;
+		color: $color-blaco;
 		margin: 0 40px;
 	}
 
