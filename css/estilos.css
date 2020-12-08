@@ -18,29 +18,22 @@ p {
   line-height: 2;
   letter-spacing: 1px; }
 
-/*ESTILOS GENERALES*/
-/*.mainBody{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, auto); 
-	grid-template-areas: 	"header   header   header"
-							"section  section  section"
-							"footer   footer   footer"
-}
+/* GRIDS */
+.mainBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header   header   header" "section  section  section" "footer   footer   footer"; }
 
-.mainBody{
-	header{
-		grid-area: header;
-	}
+.mainBody header {
+  grid-area: header; }
 
-	section{
-		grid-area: section;
-	}
+.mainBody section {
+  grid-area: section; }
 
-	footer{
-		grid-area: footer;
-	}
-}*/
+.mainBody footer {
+  grid-area: footer; }
+
 /* MAIN HEADER */
 header {
   /* GENERAL TABLETS */
@@ -80,7 +73,7 @@ header {
         text-decoration: none; }
     header nav img {
       height: 70px; }
-    header nav nav ul {
+    header nav ul {
       display: flex;
       align-items: center;
       justify-content: space-around; }
@@ -90,12 +83,14 @@ header {
     padding: 7px; }
   header ul ul {
     display: none; }
-  header ul:hover ul {
+  header ul li:hover ul {
     text-align: center;
     display: block;
     width: 200px;
     position: absolute;
     background-color: #211F38; }
+  header ul li ul li a:hover {
+    color: #fff; }
 
 /* MAIN */
 @keyframes boton {
@@ -335,16 +330,8 @@ header {
 
 /* FOOTER */
 .footer {
-  /*background-image: linear-gradient(90deg, $color-rojo, $color-azul);*/
   background: #211F38;
-  padding: 30px 0;
-  /*
-	footer div{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}*/ }
+  padding: 30px 0; }
   .footer .footer__elementos div p {
     text-align: left;
     color: #fff;
