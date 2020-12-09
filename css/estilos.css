@@ -149,7 +149,7 @@ header {
   color: #fff;
   padding: 20px 50px;
   margin: 0 250px;
-  font-size: 30px; }
+  font-size: 40px; }
 
 .quienesSomos {
   padding: 50px;
@@ -343,3 +343,95 @@ header {
     transition: all 0.5s; }
     .footer .footer__redes img:hover {
       transform: translateY(-10px); }
+
+/* -------- MEDIA QUERY TABLET-------- */
+@media only screen and (max-width: 1024px) {
+  .mainBody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header   header   header" "section  section  section" "footer   footer   footer"; }
+  header {
+    /* GENERAL HEADER */ }
+    header .nav-main {
+      display: none; }
+    header .nav-main-tablet {
+      padding: 30px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 100; }
+      header .nav-main-tablet a:hover {
+        color: #fff;
+        text-decoration: none; }
+    header nav li {
+      margin: 0 10px;
+      text-align: center; }
+    header ul li:hover ul {
+      z-index: 101; }
+    header .nav-general {
+      display: none; }
+    header .nav-general-tablet {
+      display: block;
+      padding: 30px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      z-index: 100; }
+  /* MAIN */
+  .main .main__textos {
+    margin-left: 20%;
+    top: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    z-index: 100; }
+    .main .main__textos h1 {
+      text-align: center;
+      font-size: 100px;
+      -webkit-text-stroke: 1px #E4E4EA; }
+  .main .main__video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .main .main__video video {
+      width: 1024px;
+      vertical-align: top; }
+  /* QUIENES SOMOS */
+  .carousel-caption h3 {
+    display: none; }
+  .quienesSomos h2 {
+    text-align: center; }
+  .quienesSomos img {
+    display: none; }
+  .equipo .equipo__fotos {
+    margin: 0 40px; }
+  /* SERVICIOS */
+  .servicios .servicios__textos {
+    margin: 0; }
+    .servicios .servicios__textos h2 {
+      text-align: center; }
+    .servicios .servicios__textos p {
+      text-align: left; }
+  .servicios img {
+    display: none; }
+  /* SERVICIOS */
+  .contacto .form-group button {
+    height: 80px; }
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .footer__elementos div p {
+      text-align: center; }
+    .footer .footer__redes {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; } }

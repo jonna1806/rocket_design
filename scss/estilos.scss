@@ -1,6 +1,7 @@
 @import 'colores';
 @import 'generales';
 
+
 /* GRIDS */
 
 .mainBody{
@@ -185,14 +186,12 @@ header	{
 
 /* QUIENES SOMOS */
 
-.carousel-caption{
-	h3{
-		background: $color-rojo;
-		color: $color-blanco; 
-		padding:20px 50px;
-		margin: 0 250px;
-		font-size: 30px;		
-	}
+.carousel-caption h3{	
+	background: $color-rojo;
+	color: $color-blanco; 
+	padding:20px 50px;
+	margin: 0 250px;
+	font-size: 40px;	
 }
 
 .quienesSomos{
@@ -483,6 +482,10 @@ header	{
 		}
 	}
 }
+
+@import 'media_queries_tablets'; 
+
+
 
 	
 
