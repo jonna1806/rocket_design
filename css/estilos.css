@@ -409,6 +409,7 @@ header {
     text-align: center; }
   .quienesSomos img {
     display: none; }
+  /* EQUIPO */
   .equipo .equipo__fotos {
     margin: 0 40px; }
   /* SERVICIOS */
@@ -420,7 +421,7 @@ header {
       text-align: left; }
   .servicios img {
     display: none; }
-  /* SERVICIOS */
+  /* CONTACTO */
   .contacto .form-group button {
     height: 80px; }
   /* FOOTER */
@@ -435,3 +436,77 @@ header {
       margin-top: 20px;
       display: flex;
       justify-content: center; } }
+
+/* -------- MEDIA QUERY CELLPHONE-------- */
+@media only screen and (max-width: 500px) {
+  h1, h2 {
+    font-size: 40px; }
+  .mainBody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header   header   header" "section  section  section" "footer   footer   footer"; }
+  /* MAIN HEADER */
+  header {
+    /* GENERAL HEADER */ }
+    header .nav-main-tablet {
+      padding: 10px 0;
+      width: 100%;
+      z-index: 100; }
+      header .nav-main-tablet ul {
+        margin-bottom: 0; }
+      header .nav-main-tablet a {
+        font-size: 13px; }
+      header .nav-main-tablet img {
+        height: 50px; }
+    header .nav-general-tablet {
+      padding: 10px 0; }
+      header .nav-general-tablet ul {
+        margin-bottom: 0; }
+      header .nav-general-tablet a {
+        font-size: 13px; }
+      header .nav-general-tablet img {
+        height: 50px; }
+  /* MAIN */
+  .main .main__textos {
+    margin-left: 0;
+    top: 200px;
+    z-index: 100; }
+    .main .main__textos h1 {
+      font-size: 80px; }
+  /* QUIENES SOMOS */
+  .quienesSomos .quienesSomos__textos p {
+    width: 350px; }
+  .equipo .equipo__fotos__empleado {
+    width: 200px;
+    height: 370px; }
+    .equipo .equipo__fotos__empleado img {
+      width: 200px; }
+    .equipo .equipo__fotos__empleado p {
+      font-size: 14px; }
+    .equipo .equipo__fotos__empleado .equipo__fotos__empleado__descrip {
+      display: none; }
+  /* SERVICIOS */
+  .servicios .servicios__textos p {
+    width: 350px;
+    margin-left: 50px; }
+  /* CLIENTES */
+  .clientes .clientes__lista img {
+    width: 130px; }
+  .proyectos .proyectos__lista img {
+    width: 150px;
+    vertical-align: top;
+    transition: all 0.5s; }
+    .proyectos .proyectos__lista img:hover {
+      transform: scale(1.4); }
+  /* CONTACTO */
+  .contacto .row .map {
+    width: 490px; }
+  .contacto .row form {
+    width: 490px;
+    padding: 0;
+    padding-left: 30px; }
+  .contacto .row .form-group button {
+    height: 50px; }
+  .contacto .row .form-group .btn {
+    margin-top: 20px; } }

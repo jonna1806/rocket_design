@@ -420,7 +420,7 @@ header	{
 		div{
 			label, input{
 				letter-spacing: 1px;
-			font-family: 'Montserrat';
+				font-family: 'Montserrat';
 			}
 		}
 
@@ -484,6 +484,7 @@ header	{
 }
 
 @import 'media_queries_tablets'; 
+@import 'media_queries_mobil'; 
 
 
 
