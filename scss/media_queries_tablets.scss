@@ -1,7 +1,7 @@
 
 /* -------- MEDIA QUERY TABLET-------- */
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 992px){
 
 	.mainBody{
 	display: grid;
@@ -63,7 +63,7 @@
 
 	.main {
 		.main__textos{
-		margin-left: 20%;
+		margin-left: 18%;
 		top:200px;
 		position: absolute;
 		display: grid;
@@ -73,7 +73,7 @@
 		z-index: 100;
 
 			h1{
-				text-align: center;
+				
 				font-size: 100px;
 				-webkit-text-stroke: 1px #E4E4EA;
 			}

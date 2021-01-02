@@ -455,7 +455,7 @@ header {
       transform: translateY(-10px); }
 
 /* -------- MEDIA QUERY TABLET-------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
   .mainBody {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -493,7 +493,7 @@ header {
       z-index: 100; }
   /* MAIN */
   .main .main__textos {
-    margin-left: 20%;
+    margin-left: 18%;
     top: 200px;
     position: absolute;
     display: grid;
@@ -502,7 +502,6 @@ header {
     justify-items: center;
     z-index: 100; }
     .main .main__textos h1 {
-      text-align: center;
       font-size: 100px;
       -webkit-text-stroke: 1px #E4E4EA; }
   .main .main__video {
@@ -548,7 +547,7 @@ header {
       justify-content: center; } }
 
 /* -------- MEDIA QUERY CELLPHONE-------- */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   h1, h2 {
     font-size: 40px; }
   .mainBody {
@@ -580,10 +579,10 @@ header {
   /* MAIN */
   .main .main__textos {
     margin-left: 0;
-    top: 200px;
+    top: 150px;
     z-index: 100; }
     .main .main__textos h1 {
-      font-size: 80px; }
+      font-size: 100px; }
   /* QUIENES SOMOS */
   .quienesSomos .quienesSomos__textos p {
     width: 350px; }
@@ -596,10 +595,24 @@ header {
       font-size: 14px; }
     .equipo .equipo__fotos__empleado .equipo__fotos__empleado__descrip {
       display: none; }
+  .unetenos {
+    height: 350px;
+    padding: 50px; }
+    .unetenos .unetenos__1 {
+      font-size: 20px; }
+    .unetenos .unetenos__2 {
+      font-size: 40px; }
   /* SERVICIOS */
   .servicios .servicios__textos p {
     width: 350px;
     margin-left: 50px; }
+  .hagamoslo {
+    height: 300px;
+    padding: 50px; }
+    .hagamoslo .hagamoslo__1 {
+      font-size: 20px; }
+    .hagamoslo .hagamoslo__2 {
+      font-size: 40px; }
   /* CLIENTES */
   .clientes .clientes__lista img {
     width: 130px; }
@@ -609,14 +622,34 @@ header {
     transition: all 0.5s; }
     .proyectos .proyectos__lista img:hover {
       transform: scale(1.4); }
+  .confiaron {
+    height: 300px;
+    padding: 50px; }
+    .confiaron .confiaron__1 {
+      font-size: 20px; }
+    .confiaron .confiaron__2 {
+      font-size: 40px; }
   /* CONTACTO */
-  .contacto .row .map {
-    width: 490px; }
-  .contacto .row form {
-    width: 490px;
-    padding: 0;
-    padding-left: 30px; }
-  .contacto .row .form-group button {
-    height: 50px; }
-  .contacto .row .form-group .btn {
-    margin-top: 20px; } }
+  .contacto .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto .row .map {
+      width: 100%; }
+    .contacto .row form {
+      width: 490px;
+      padding: 0;
+      padding-left: 30px; }
+      .contacto .row form div h2 {
+        margin-left: 0; }
+    .contacto .row .form-group button {
+      height: 50px; }
+    .contacto .row .form-group .btn {
+      margin-top: 20px; }
+  .teEsperamos {
+    height: 300px;
+    padding: 50px; }
+    .teEsperamos .teEsperamos__1 {
+      font-size: 20px; }
+    .teEsperamos .teEsperamos__2 {
+      font-size: 40px; } }

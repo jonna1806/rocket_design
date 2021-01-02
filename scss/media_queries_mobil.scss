@@ -1,6 +1,6 @@
 /* -------- MEDIA QUERY CELLPHONE-------- */
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 576px){
 
 	h1, h2 {
 		font-size: 40px;
@@ -61,11 +61,11 @@
 	.main {
 		.main__textos{
 			margin-left: 0;
-			top: 200px; 
+			top: 150px; 
 			z-index: 100;
 
 			h1{
-				font-size: 80px;
+				font-size: 100px;
 			}
 		}
 	}
@@ -99,6 +99,19 @@
 		}
 	}
 
+	.unetenos{
+		height: 350px;
+		padding: 50px;
+
+		.unetenos__1{
+			font-size: 20px;
+		}
+	
+		.unetenos__2{
+			font-size: 40px;
+		}
+	}
+
 	/* SERVICIOS */
 
 	.servicios{
@@ -108,6 +121,19 @@
 				margin-left: 50px;
 			}
 		} 
+	}
+
+	.hagamoslo{
+		height: 300px;
+		padding: 50px;
+
+		.hagamoslo__1{
+			font-size: 20px;
+		}
+	
+		.hagamoslo__2{
+			font-size: 40px;
+		}
 	}
 
 	/* CLIENTES */
@@ -130,18 +156,39 @@
 		}
 	}
 
+	.confiaron{
+		height: 300px;
+		padding: 50px;
+
+		.confiaron__1{
+			font-size: 20px;
+		}
+	
+		.confiaron__2{
+			font-size: 40px;
+		}
+	}
+
 	/* CONTACTO */
 
 	.contacto{
-		.row {			
+		.row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 			.map {
-				width: 490px;
+				width: 100%;
 			}
 
 			form{
 				width: 490px;
 				padding: 0;
 				padding-left: 30px;
+
+				div h2{
+					margin-left: 0;
+				}
 			}
 
 			.form-group {
@@ -153,6 +200,19 @@
 					margin-top: 20px;
 				}
 			} 
+		}
+	}
+
+	.teEsperamos{
+		height: 300px;
+		padding: 50px;
+
+		.teEsperamos__1{
+			font-size: 20px;
+		}
+	
+		.teEsperamos__2{
+			font-size: 40px;
 		}
 	}
 }
