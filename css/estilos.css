@@ -200,9 +200,9 @@ header {
     font-size: 20px;
     text-align: center;
     border-bottom: solid 1px #E55151;
-    padding: 10px 0; }
+    padding: 15px 0; }
   .equipo .equipo__fotos__empleado__descrip {
-    margin-top: 20px;
+    padding: 20px;
     width: 300px;
     font-size: 14px;
     text-align: center; }
@@ -440,10 +440,12 @@ header {
 .footer {
   background: #211F38;
   padding: 30px 0; }
-  .footer .footer__elementos div p {
-    text-align: left;
-    color: #fff;
-    margin: 0 40px; }
+  .footer .footer__elementos {
+    margin-right: 0; }
+    .footer .footer__elementos div p {
+      text-align: left;
+      color: #fff;
+      margin: 0 40px; }
   .footer .footer__redes img {
     list-style: none;
     height: 20px;

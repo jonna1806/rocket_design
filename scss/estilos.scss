@@ -264,11 +264,11 @@ header	{
 		font-size: 20px;
 		text-align: center;
 		border-bottom: solid 1px $color-rojo;
-		padding: 10px 0;
+		padding: 15px 0;
 	}
 
 	.equipo__fotos__empleado__descrip {
-		margin-top: 20px;
+		padding: 20px;
 		width: 300px;
 		font-size: 14px;
 		text-align: center;
@@ -603,11 +603,15 @@ header	{
 	padding: 30px 0;
 
 
-	.footer__elementos div p{
+	.footer__elementos{
+		margin-right: 0;
+		
+		div p{
 		text-align: left;
 		color: $color-blanco;
 		margin: 0 40px;
-	}
+		}
+	} 
 
 	.footer__redes img{
 		list-style: none;
