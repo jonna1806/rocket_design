@@ -275,6 +275,48 @@ header	{
 	}
 }
 
+.unetenos{
+	background: $color-rojo;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+
+	.unetenos__1{
+		margin: 0;
+		color: $color-blanco;
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+	.unetenos__2{
+		color: $color-blanco;
+		text-align: center;
+		font-weight: 700;
+		font-size: 80px;
+	}
+
+	button{
+		width: 200px;
+			color: $color-rojo;
+			background-color:$color-blanco;
+			border: solid 2px $color-blanco;
+			font-family: 'Montserrat';
+			font-weight: 500;
+			line-height: 2;
+			letter-spacing: 1px;
+			transition: all 0.5s;
+
+			&:hover{
+				background-color: $color-rojo;
+				border: solid 2px $color-blanco;
+				color: $color-blanco;
+			}
+	}
+}
+
 /* SERVICIOS */
 
 .servicios	{
@@ -372,6 +414,28 @@ header	{
 	}
 }
 
+.hagamoslo{
+	background: $color-blanco;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+
+	.hagamoslo__1{
+		color: $color-rojo;
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+	.hagamoslo__2{
+		color: $color-rojo;
+		text-align: center;
+		font-weight: 700;
+		font-size: 80px;
+	}
+}
+
 /* CLIENTES */
 
 .clientes{
@@ -441,6 +505,28 @@ header	{
 	}
 }
 
+.confiaron{
+	background: $color-rojo;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+
+	.confiaron__1{
+		color: $color-blanco;
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+	.confiaron__2{
+		color: $color-blanco;
+		text-align: center;
+		font-weight: 700;
+		font-size: 80px;
+	}
+}
+
 /* CONTÁCTO */
 
 .contacto{
@@ -486,6 +572,28 @@ header	{
 		}
 	}
 
+}
+
+.teEsperamos{
+	background: $color-gris;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+
+	.teEsperamos__1{
+		color: $color-rojo;
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+	.teEsperamos__2{
+		color: $color-rojo;
+		text-align: center;
+		font-weight: 700;
+		font-size: 80px;
+	}
 }
 
 /* FOOTER */

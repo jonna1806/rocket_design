@@ -207,6 +207,39 @@ header {
     font-size: 14px;
     text-align: center; }
 
+.unetenos {
+  background: #E55151;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px; }
+  .unetenos .unetenos__1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px; }
+  .unetenos .unetenos__2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px; }
+  .unetenos button {
+    width: 200px;
+    color: #E55151;
+    background-color: #fff;
+    border: solid 2px #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1px;
+    transition: all 0.5s; }
+    .unetenos button:hover {
+      background-color: #E55151;
+      border: solid 2px #fff;
+      color: #fff; }
+
 /* SERVICIOS */
 .servicios {
   padding: 50px;
@@ -277,6 +310,23 @@ header {
         border: solid 2px #E55151;
         color: #E55151; }
 
+.hagamoslo {
+  background: #fff;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+  .hagamoslo .hagamoslo__1 {
+    color: #E55151;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px; }
+  .hagamoslo .hagamoslo__2 {
+    color: #E55151;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px; }
+
 /* CLIENTES */
 .clientes {
   padding: 50px; }
@@ -324,6 +374,23 @@ header {
       .proyectos .proyectos__lista img:hover {
         transform: scale(1.5); }
 
+.confiaron {
+  background: #E55151;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+  .confiaron .confiaron__1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px; }
+  .confiaron .confiaron__2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px; }
+
 /* CONTÁCTO */
 .contacto {
   padding: 50px 0; }
@@ -351,6 +418,23 @@ header {
   .contacto form .modal-header h1 {
     font-size: 40px;
     margin: 0; }
+
+.teEsperamos {
+  background: #E4E4EA;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+  .teEsperamos .teEsperamos__1 {
+    color: #E55151;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px; }
+  .teEsperamos .teEsperamos__2 {
+    color: #E55151;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px; }
 
 /* FOOTER */
 .footer {
