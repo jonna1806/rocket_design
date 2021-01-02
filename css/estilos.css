@@ -228,30 +228,54 @@ header {
     width: 500px; }
 
 /* TABLA SERVICIOS */
-.tabla {
-  background-color: #E4E4EA;
-  border: 0;
-  margin: 50px; }
-  .tabla .tabla__tr th {
-    padding: 7px 10px;
-    background-color: #E55151;
-    text-transform: uppercase;
-    color: #fff;
-    border: 0;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-align: center; }
-  .tabla .tabla__tr td {
-    padding: 10px 30px;
-    color: #211F38;
-    border: 0;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    line-height: 2;
-    letter-spacing: 1px; }
-    .tabla .tabla__tr td ol {
-      padding-left: 30px; }
+.lista__servicios {
+  background: #E4E4EA;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around; }
+  .lista__servicios .lista__servicios__grupo {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .lista__servicios .lista__servicios__grupo img {
+      height: 70px;
+      margin-bottom: 15px;
+      color: #E55151; }
+    .lista__servicios .lista__servicios__grupo .lista__servicios__grupo__nombre {
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      border-bottom: solid 1px #E55151;
+      padding: 10px 0; }
+    .lista__servicios .lista__servicios__grupo ol {
+      font-family: 'Montserrat';
+      margin-left: 20px;
+      line-height: 2;
+      letter-spacing: 1px; }
+  .lista__servicios .lista__servicios__boton {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; }
+    .lista__servicios .lista__servicios__boton button {
+      color: #fff;
+      background-color: #E55151;
+      border: solid 2px #E55151;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      line-height: 2;
+      letter-spacing: 1px;
+      transition: all 0.5s; }
+      .lista__servicios .lista__servicios__boton button:hover {
+        background-color: #E4E4EA;
+        border: solid 2px #E55151;
+        color: #E55151; }
 
 /* CLIENTES */
 .clientes {

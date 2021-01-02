@@ -308,35 +308,65 @@ header	{
 
 /* TABLA SERVICIOS */
 
-.tabla {
-	background-color: $color-gris;
-	border: 0;
-	margin: 50px;
+.lista__servicios{
+	background: $color-gris;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
 
-	.tabla__tr{
-		th{
-			padding: 7px 10px;
-			background-color: $color-rojo;
-			text-transform: uppercase;
-			color: $color-blanco;
-			border: 0;
-			font-family: 'Montserrat';
-			font-weight: 700;
-			letter-spacing: 3px;
-			text-align: center;
+	.lista__servicios__grupo{
+		background: $color-blanco;
+		padding: 20px;
+		width: 300px;
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+
+		img{
+			height: 70px;
+			margin-bottom: 15px;
+			color: $color-rojo;
 		}
 
-		td{
-			padding: 10px 30px;
-			color: $color-azul;
-			border: 0;
+		.lista__servicios__grupo__nombre{
+			font-weight: 700;
+			font-size: 20px;
+			text-align: center;
+			border-bottom: solid 1px $color-rojo;
+			padding: 10px 0;
+		}
+
+		ol{
+			font-family: 'Montserrat';
+			margin-left: 20px;
+			line-height: 2;
+			letter-spacing: 1px;
+		}		
+	}
+
+	.lista__servicios__boton{
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;	
+
+		button {
+			color: $color-blanco;
+			background-color:$color-rojo;
+			border: solid 2px $color-rojo;
 			font-family: 'Montserrat';
 			font-weight: 500;
 			line-height: 2;
 			letter-spacing: 1px;
+			transition: all 0.5s;
 
-			ol{
-				padding-left: 30px;
+			&:hover{
+				background-color: $color-gris;
+				border: solid 2px $color-rojo;
+				color: $color-rojo;
 			}
 		}
 	}
