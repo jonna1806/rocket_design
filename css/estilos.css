@@ -530,9 +530,16 @@ header {
       text-align: left; }
   .servicios img {
     display: none; }
+  .hagamoslo .hagamoslo__2 {
+    font-size: 60px; }
+  /* CLIENTES */
+  .confiaron .confiaron__2 {
+    font-size: 60px; }
   /* CONTACTO */
   .contacto .form-group button {
     height: 80px; }
+  .teEsperamos .teEsperamos__2 {
+    font-size: 60px; }
   /* FOOTER */
   .footer {
     width: 100%;
@@ -547,6 +554,66 @@ header {
       justify-content: center; } }
 
 /* -------- MEDIA QUERY MOBILE LANDSCAPE-------- */
+@media only screen and (max-width: 768px) {
+  /* MAIN */
+  header {
+    /* GENERAL HEADER */ }
+    header .nav-main-tablet {
+      padding: 15px 0; }
+      header .nav-main-tablet ul {
+        margin-bottom: 0;
+        margin-top: 10px; }
+    header .nav-general-tablet {
+      padding: 15px 0; }
+      header .nav-general-tablet ul {
+        margin-bottom: 0;
+        margin-top: 10px; }
+  /* MAIN */
+  .main .main__textos {
+    top: 230px;
+    margin-left: 10%; }
+  /* QUIENES SOMOS */
+  .unetenos .unetenos__1 {
+    font-size: 30px; }
+  .unetenos .unetenos__2 {
+    font-size: 50px; }
+  /* SERVICIOS */
+  .lista__servicios .lista__servicios__grupo {
+    width: 250px; }
+  .hagamoslo .hagamoslo__1 {
+    font-size: 30px; }
+  .hagamoslo .hagamoslo__2 {
+    font-size: 50px; }
+  /* CLIENTES */
+  .clientes .clientes__lista img {
+    width: 150px; }
+  .proyectos .proyectos__lista img {
+    width: 250px; }
+  .confiaron .confiaron__1 {
+    font-size: 30px; }
+  .confiaron .confiaron__2 {
+    font-size: 50px; }
+  /* CONTACTO */
+  .contacto .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto .row .map {
+      width: 100%; }
+    .contacto .row form {
+      padding: 0;
+      padding-left: 30px; }
+      .contacto .row form div h2 {
+        margin-left: 0; }
+    .contacto .row .form-group button {
+      height: 50px; }
+    .contacto .row .form-group .btn {
+      margin-top: 20px; }
+  .teEsperamos .teEsperamos__1 {
+    font-size: 30px; }
+  .teEsperamos .teEsperamos__2 {
+    font-size: 50px; } }
+
 /* -------- MEDIA QUERY CELLPHONE-------- */
 @media only screen and (max-width: 576px) {
   h1, h2 {
